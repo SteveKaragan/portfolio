@@ -1,0 +1,106 @@
+
+<!--The usual HTML Head -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Intro Web Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+<!--Tried to use Semantic tags-->
+<body>
+  <header>
+    <!--This div may be unnecessary, but saw it included in other HTML files-->
+    <div>
+      <h1>Stephen Karagan</h1>
+      <h4>Software Engineer</h4>
+      <!--NAV bar with links to other sections of page (css has pseudo hover for the links)-->
+      <nav>
+        <a href='#intro'>Intro</a><a href='#about'>About Me</a><a href='#portfolio'>Portfolio</a><a href='#contact'>Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div>
+      <!--The div and article are probably unecessary with main for this simple page, but saw them included else where-->
+      <article>
+        <h2>Welcome, I am Steve Karagan</h2>
+      <!--The picture quality is lacking, sorry.  Will add some flex here when I get a better picture-->
+        <img class='round-pic' src='/images/Me.jpeg' alt='Steve Karagan Picture'>
+      <!--The id's are so the links in the NAV work.-->
+      <section id='intro'>
+        <p>I am an aspiring Software Engineer, and I live in New York City.<p>
+        <p>I enjoy working collaboratively as well as being an independent contributor.</p>
+        <p>My professional background is broad and as varied as my interests.  I have domain expertise in:</p>
+        <ol>
+          <li>Finance</li>
+          <li>Higher Education</li>
+          <li>Fitness</li>
+          <li>Renewable Energy</li>
+        </ol>
+      </section>
+        <hr>
+        <section id='about'>
+          <h3>About Me</h3>
+          <p>After conducting a review of my career thus far, I realized that I had most enjoyed periods of change and improvement--and, you guessed it, that always involved technology!  I developed several desktop solutions for employers, and was a member of several software implementations in the finance space.</p>
+          <p>I've enrolled at Bloc to become a software engineer, and participate in the information revolution of our times. I am very open to networking, collaborating, and career opportunities, and I enjoy hearing how other developers have navigated their careers. My favorite activity is experiencing different cultures, whether that is exploring New York's diversity or foreign travel:</p>
+          <ul>
+            <li>Brazil</li>
+            <li>Colombia</li>
+            <li>Greece</li>
+            <li>Italy</li>
+            <li>France</li>
+          </ul>
+        </section>
+        <hr>
+        <!--New portfolio section using flexbox-->
+        <section id='portfolio'>
+          <h3>Portfolio</h3>
+          <div class='group'>
+            <div class='item'>
+              <img src='/images/placeholder.png' alt='Screen Shot'> 
+              <h4>Project 1</h4>
+              <p>Here is some detail about the amazing skills I utilized building this project, the stack used. Some information about the problem it solves, and any interesting coding challenges or features to call attention to.</p>
+              <a href='#' target="_blank">GitHub</a><a href='#' target="_blank">Live App</a>
+            </div>
+            <div class='item'>
+              <img src='/images/placeholder.png' alt='Screen Shot'> 
+              <h4>Project 2</h4>
+              <p>Here is some detail about the amazing skills I utilized building this project, the stack used. Some information about the problem it solves, and any interesting coding challenges or features to call attention to.</p>
+              <a href='#' target="_blank">GitHub</a><a href='#' target="_blank">Live App</a>
+            </div>
+          </div>
+          <div class='group'>
+            <div class='item'>
+              <img src='/images/placeholder.png' alt='Screen Shot'> 
+              <h4>Project 3</h4>
+              <p>Here is some detail about the amazing skills I utilized building this project, the stack used. Some information about the problem it solves, and any interesting coding challenges or features to call attention to.</p>
+              <a href='#' target="_blank">GitHub</a><a href='#' target="_blank">Live App</a>
+            </div>
+            <div class='item'>
+              <img src='/images/placeholder.png' alt='Screen Shot'> 
+              <h4>Project 4</h4>
+              <p>Here is some detail about the amazing skills I utilized building this project, the stack used. Some information about the problem it solves, and any interesting coding challenges or features to call attention to.</p>
+              <a href='#' target="_blank">GitHub</a><a href='#' target="_blank">Live App</a>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <section id='contact'>
+          <div><h3>Get in Contact<h3></div>
+          <p>Contact me, I would love to hear from you!</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <!--Tested external links and they were working, email should load defalt email program with TO filled out to me!-->
+    <a href='https://www.linkedin.com/in/stephenkaragan/' target="_blank">LinkedIn</a><a href='https://github.com/SteveKaragan' target="_blank">GitHub</a><a href="mailto:stevekaragan@gmail.com">Email Me</a>
+  </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

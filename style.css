@@ -1,0 +1,122 @@
+/* Set ALL HTML elements with border-box sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Had issue of header/footer not being totally at top or bottom (see header below) this required making body top margin great enough that is started below header.  Perhaps you can teach me a better way?*/
+body {
+  margin-top: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0fbfcff;
+  color: #293241ff;
+}
+
+header {
+  background-color: #293241ff;
+  color: #98c1d9ff;
+  text-align: center;
+  /* Had issue of header/footer not being totally at top or bottom I found the solution below on the web*/
+  position:absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  padding-bottom: 20px; 
+}
+
+/* Styled all the links at once*/
+a {
+  padding: 10px 15px 10px 20px;
+  text-decoration: none;
+  color: #ee6c4dff;
+  background-color: #293241ff;
+}
+
+/* Just a text link rollover*/
+a:hover   { 
+  color: #e0fbfcff; 
+}
+
+/* I could fuss with this all day. Is there a standard? */
+article {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+h2, h3 {
+  color: #3d5a80ff;
+}
+
+h2 {
+  text-align: center;
+}
+/* Not a great pic, made it round!*/
+img.round-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 50%;
+  border: 3px solid #293241ff;
+}
+/* Just some separators*/  
+hr {
+  height: 5px;
+  background-color: #ee6c4dff;
+}
+
+footer {
+  background-color: #293241ff;
+  color: #98c1d9ff;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+    /* Had issue of header/footer not being totally at top or bottom I found the solution below on the web*/
+  position:absolute;
+  left:0;
+  width: 100%;   
+}
+/* flex img fix */
+.group img {
+  width: 100%;
+}
+
+/* Groups & Items  (Mobile First) */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+
+/*
+CSS HEX 
+--bdazzled-blue: #3d5a80ff;
+--pale-cerulean: #98c1d9ff;
+--light-cyan: #e0fbfcff;
+--burnt-sienna: #ee6c4dff;
+--gunmetal: #293241ff;
+*/
